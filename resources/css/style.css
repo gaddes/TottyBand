@@ -15,6 +15,23 @@ header {
   width: 960px;
   margin: 0 auto 0 auto;
   background-color: #FFF;
+
+  display: flex;
+}
+
+.column_1 {
+  width: 200px;
+  border: 1px solid green;
+}
+
+.column_2 {
+  width: 760px;
+  padding: 0 10px 10px 10px;
+  border: 1px solid red;
+}
+
+.column_2 img {
+  width: inherit;
 }
 
 footer {
@@ -31,5 +48,5 @@ footer {
 }
 
 footer nav span {
-  padding: 0 10px 0 10px; 
+  padding: 0 10px 0 10px;
 }
