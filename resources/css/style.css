@@ -169,6 +169,18 @@ header {
   width: 740px;
 }
 
+/* Text styles (using classes) */
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+/* Footer */
+
 footer {
   width: 960px;
   height: 80px;
@@ -181,8 +193,6 @@ footer {
   justify-content: space-around;
   align-items: center;
 }
-
-/* Footer */
 
 footer nav span {
   padding: 0 10px 0 10px;
