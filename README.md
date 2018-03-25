@@ -2,4 +2,4 @@
 
 <h2>To-do</h2>
 
-- [ ] Use % or em for containers and images
+- [ ] Resize images and text using rem, em, % where appropriate
