@@ -18,7 +18,7 @@ body {
 }
 
 /* Set width of main containers */
-nav, header, .content {
+nav, header, footer, .content {
   width: 80%;
   max-width: 960px;
   overflow: hidden;
@@ -83,30 +83,12 @@ nav span {
 /* Header */
 
 header {
-  width: 80%;
-  max-width: 960px;
-  height: 250px;
-
   margin: 1rem auto;
   padding-top: 2rem;
-  display: flex;
 }
 
-.header-column_1 {
-  width: 20%;
-  background-image: url("../images/band_logo.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-
-.header-column_2 {
-  width: 80%;
-  margin-left: 2%;
-  background-image: url("../images/musical-notes_COPYRIGHTED.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+header img {
+  max-height: 200px; /* Image looks distorted if height exceeds 200px */
 }
 
 /* Main Content Container */
@@ -246,7 +228,6 @@ header {
 /* Footer */
 
 footer {
-  width: 960px;
   height: 80px;
   background-color: #DFE3E2;
   margin: 0 auto 0 auto;
