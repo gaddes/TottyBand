@@ -240,3 +240,12 @@ footer {
 footer nav span {
   padding: 0 10px 0 10px;
 }
+
+/* Media Queries */
+
+@media only screen and (max-width: 768px) {
+  .content, .width-80 {
+    width: 100%;
+    /* overflow: hidden; */
+  }
+}
