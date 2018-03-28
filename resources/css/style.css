@@ -49,7 +49,7 @@ header nav {
 
   width: 80%;
   max-width: 960px;
-  height: 2.5rem;
+  height: auto;
   z-index: 1;
 }
 
@@ -100,6 +100,8 @@ header nav div:hover, .dropdown:hover .dropdown-content {
 .main_logo {
   margin: 1rem auto;
   padding-top: 2rem;
+
+  margin: header nav height;
 }
 
 .main_logo img {
@@ -261,5 +263,20 @@ footer nav span {
 @media only screen and (max-width: 480px) {
   html {
     font-size: 1.2rem;
+  }
+}
+
+/* Media queries to deal with nav bar resizing */
+/* TODO: Use JavaScript to deal with this more elegantly (set margin equal to nav bar height) */
+
+@media only screen and (max-width: 932px) {
+  .main_logo {
+    padding-top: 3rem;
+  }
+}
+
+@media only screen and (max-width: 610px) {
+  .main_logo {
+    padding-top: 4rem;
   }
 }
