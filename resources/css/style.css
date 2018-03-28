@@ -106,7 +106,7 @@ header nav div:hover, .dropdown:hover .dropdown-content {
 
 .main_logo img {
   max-height: 200px; /* Image looks distorted if height exceeds 200px */
-  width: 98%;
+  width: 100%;
   margin: auto;
 }
 
