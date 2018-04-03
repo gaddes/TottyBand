@@ -301,6 +301,11 @@ footer nav span {
   footer {
     margin-bottom: 2.5%;
   }
+  .column_2:hover {
+    dropdown-content {
+      display: none;
+    }
+  }
 }
 
 @media only screen and (max-width: 641px) {
@@ -321,5 +326,10 @@ footer nav span {
   }
   .dropdown-content {
     width: 95%;
+  }
+  .column_2:hover {
+    .dropdown-content {
+      display: none;
+    }
   }
 }
