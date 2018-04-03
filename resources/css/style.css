@@ -237,7 +237,7 @@ header nav div:hover, .dropdown:hover .dropdown-content {
   margin-top: 1rem;
 }
 
-.column_2 img {
+.column_2 img, iframe {
   width: 100%;
   padding: 0.2rem;
   padding-bottom: 0.7rem;

@@ -2,22 +2,37 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <title>Totty Band - Cookies</title>
+  <meta name="viewport" content="width=device-width">
+  <title>Totty Band</title>
   <!-- <link rel="stylesheet" href="./resources/css/reset.css" type="text/css"> -->
   <link rel="stylesheet" href="./resources/css/style.css" type="text/css">
 </head>
 <body>
 
+  <!-- Navigation Bar -->
+  <header class="width-80">
+    <nav>
+      <div><a href="index.html">Homepage</a></div>
+      <div class="dropdown">
+        <a href="#">The Band &#x25BC;</a>
+        <div class="dropdown-content">
+          <a href="#">Band History</a>
+          <a href="#">Vacancies</a>
+          <a href="#">Band News</a>
+          <a href="#">Band Forum</a>
+        </div>
+      </div>
+      <div><a href="#">Events</a></div>
+      <div><a href="#">Gallery</a></div>
+      <div><a href="contact.html">Contact Us</a></div>
+    </nav>
+  </header>
+
   <!-- Header -->
 
-  <header>
-    <div class="header-column_1">
-      <!-- <img id="header-logo" src="./resources/images/band_logo.jpg" alt="Totty Band logo."> -->
-    </div>
-    <div class="header-column_2">
-      <!-- <img id="header-notes" src="./resources/images/musical-notes_COPYRIGHTED.jpg" alt="Musical notes."> -->
-    </div>
-  </header>
+  <div class="main_logo width-80">
+    <img src="./resources/images/band_logo_combined.png" alt="Totty Band logo!">
+  </div>
 
   <!-- Main Content Container -->
 
@@ -26,35 +41,22 @@
     <!-- Column 1 -->
 
     <div class="column_1">
-      <div class="navigation-bar">
-        <span><a href="./index.html">Homepage</a></span>
-        <span><a href="#">The Band</a></span>
-        <span><a href="#">Contact Us</a></span>
-        <span><a href="#">Engagements</a></span>
-        <span><a href="#">Gallery</a></span>
-        <span><a href="#">Band News</a></span>
-        <span><a href="#">Band Forum</a></span>
-      </div>
-      <div class="cookies-policy">
-        <h3>Cookies Policy</h3>
-        <span>Click in the cookie monster to view our cookies policy:</span>
-        <a href="./cookies.html"><img src="./resources/images/cookie_monster.jpg" alt="The Cookie Monster."></a>
-      </div>
       <div class="side-content">
         <span class="side-content-block-colour">News</span>
         <div class="side-content-news">
-          <span>Please keep checking to see what's new and where we are performing.</span>
+          <span>Please check back to see what's new!</span>
           <span>You can also check us out on Facebook:</span>
           <a target="_blank" href="https://www.facebook.com/TottingtonPublicBand/"><img src="./resources/images/facebook.jpg" alt="Link to Facebook."></a>
         </div>
-        <span class="side-content-block-colour">Visitors</span>
-        <div class="side-content-visitors">
-          <span>Place hit counter here.</span>
-        </div>
         <span class="side-content-block-colour">Guestbook</span>
         <div class="side-content-guestbook">
-          <span>Just click on the link below to sign in, and leave messages, on our Guestbook:</span>
-          <span><a href="#">Guestbook</a></span>
+          <span>Use the link below to sign in and leave messages on our Guestbook:</span>
+          <span class="guestbook-button"><a href="#">Guestbook</a></span>
+        </div>
+        <span class="side-content-block-colour">Cookies Policy</span>
+        <div class="cookies-policy">
+          <span>Click the Cookie Monster to view our policy:</span>
+          <a href="./cookies.html"><img src="./resources/images/cookie_monster.jpg" alt="The Cookie Monster."></a>
         </div>
       </div>
     </div>
@@ -83,16 +85,8 @@
 
   <!-- Footer -->
 
-  <footer>
-    <nav>
-    	<span><a href="#">The Band</a></span>
-    	<span><a href="#">Contact</a></span>
-    	<span><a href="#">Engagements</a></span>
-    	<span><a href="#">Gallery</a></span>
-      <span><a href="#">Band News</a></span>
-      <span><a href="#">WebMaster</a></span>
-    </nav>
-    <span>Copyright &copy; 2012 - Designed and Maintained by 'mg'.</span>
+  <footer class="width-80">
+    <span>Copyright &copy; 2018 - Designed and Maintained by 'mg'.</span>
   </footer>
 
 </body>
