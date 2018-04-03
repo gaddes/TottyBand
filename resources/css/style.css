@@ -279,11 +279,22 @@ footer nav span {
 }
 
 /* Typical iPhone in portrait */
-@media only screen and (max-width: 480px) {
+
+/* Media Queries */
+
+@media only screen and (max-width: 1024px) {
+
+}
+
+@media only screen and (max-width: 641px) {
+
+}
+
+/* @media only screen and (max-width: 480px) {
   html {
     font-size: 1.2rem;
   }
-}
+} */
 
 /* Media queries to deal with nav bar resizing */
 /* TODO: Use JavaScript to deal with this more elegantly (set margin equal to nav bar height) */
