@@ -73,6 +73,10 @@ header nav div:hover, .dropdown:hover .dropdown-content {
   background-color: #f2f3f4;
 }
 
+.mobile-navbar {
+  display: none;
+}
+
 .dropdown-content {
   display: none;
   position: absolute;
@@ -276,6 +280,14 @@ footer nav span {
 
 /* Typical iPad in portrait */
 @media only screen and (max-width: 768px) {
+
+}
+
+/* Typical iPhone in portrait */
+
+/* Media Queries */
+
+@media only screen and (max-width: 1024px) {
   .content, .width-80 {
     width: 95%;
   }
@@ -291,14 +303,6 @@ footer nav span {
   }
 }
 
-/* Typical iPhone in portrait */
-
-/* Media Queries */
-
-@media only screen and (max-width: 1024px) {
-
-}
-
 @media only screen and (max-width: 641px) {
   .column_1 {
     display: none;
@@ -306,25 +310,16 @@ footer nav span {
   .column_2 {
     width: 100%;
   }
-}
-
-/* @media only screen and (max-width: 480px) {
-  html {
-    font-size: 1.2rem;
+  .column_2 h1, h2 {
+    text-align: center;
   }
-} */
-
-/* Media queries to deal with nav bar resizing */
-/* TODO: Use JavaScript to deal with this more elegantly (set margin equal to nav bar height) */
-
-@media only screen and (max-width: 932px) {
-  .main_logo {
-    /* padding-top: 3rem; */
+  .navbar {
+    display: none:
   }
-}
-
-@media only screen and (max-width: 610px) {
-  .main_logo {
-    /* padding-top: 4rem; */
+  .mobile-navbar {
+    display: inline-block;
+  }
+  .dropdown-content {
+    width: 95%;
   }
 }
