@@ -281,14 +281,23 @@ footer nav span {
   padding: 0 0.625rem;
 }
 
-/* Media Queries */
+/* Gallery & Images */
 
-/* Typical iPad in portrait */
-@media only screen and (max-width: 768px) {
-
+.gallery-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0.25rem;
 }
 
-/* Typical iPhone in portrait */
+.gallery-column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 0.25rem;
+}
+
+.gallery-column img {
+  vertical-align: middle;
+}
 
 /* Media Queries */
 
@@ -305,6 +314,10 @@ footer nav span {
   }
   footer {
     margin-bottom: 2.5%;
+  }
+  .gallery-column {
+    flex: 50%;
+    max-width: 50%;
   }
 }
 
@@ -326,5 +339,9 @@ footer nav span {
   }
   .dropdown-content {
     width: 95%;
+  }
+  .gallery-column {
+    flex: 100%;
+    max-width: 100%;
   }
 }
