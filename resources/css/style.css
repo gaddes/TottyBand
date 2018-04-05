@@ -251,6 +251,12 @@ header nav div:hover, .dropdown:hover .dropdown-content {
   padding-bottom: 0.7rem;
 }
 
+button {
+  margin-bottom: 1.2rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
 /* Text styles (using classes) */
 
 .bold {
@@ -343,5 +349,11 @@ footer nav span {
   .gallery-column {
     flex: 100%;
     max-width: 100%;
+  }
+
+  button {
+    display: block;
+    margin: 0 auto 1.2rem auto;
+    padding: 0.75rem;
   }
 }
