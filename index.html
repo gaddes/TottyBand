@@ -86,10 +86,16 @@
       <h2>Welcome to our website!</h2>
       <p>Tottington Public Band - from the village of Tottington, Lancashire - is the longest continuously performing brass band in the UK!</p>
       <p>This site has been designed to show both the human and the professional side of the band. All band members are volunteers; they play for the love of music and the camaraderie built through public performances and competitions.</p>
-      <p>We hope that you will come and see us play or, better still, book us to play for you. To get in touch, please use the links on our contact page.</p>
-      <p>Alternatively, you can email us at <a href="mailto:webmaster@tottingtonpublicband.co.uk">webmaster@tottingtonpublicband.co.uk</a></p>
-      <p>We are proud to be part of Lancashire's fine tradition of producing quality Brass Bands. We love to perform, and we are available for all types of functions - please see our bookings page.</p>
-      <img src="./resources/images/Totty_band_2013.jpg" alt="The Totty Band in 2013!">
+
+      <button id="button_1" type="button" name="button" onclick="showhideButton();">Click here to see more!</button>
+
+      <div id="showhide" style="display:none">
+        <p>We hope that you will come and see us play or, better still, book us to play for you. To get in touch, please use the links on our contact page.</p>
+        <p>Alternatively, you can email us at <a href="mailto:webmaster@tottingtonpublicband.co.uk">webmaster@tottingtonpublicband.co.uk</a></p>
+        <p>We are proud to be part of Lancashire's fine tradition of producing quality Brass Bands. We love to perform, and we are available for all types of functions - please see our bookings page.</p>
+        <img src="./resources/images/Totty_band_2013.jpg" alt="The Totty Band in 2013!">
+      </div>
+
     </div>
   </div>
 
@@ -101,3 +107,7 @@
 
 </body>
 </html>
+
+<!-- Note: Placing scripts at the bottom of the <body> element improves the display speed, because script compilation slows down the display. -->
+
+<script src="./resources/myScript.js"></script>
