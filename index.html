@@ -6,105 +6,110 @@
   <title>Totty Band | Homepage</title>
   <!-- <link rel="stylesheet" href="./resources/css/reset.css" type="text/css"> -->
   <link rel="stylesheet" href="./resources/css/style.css" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:200,400,700" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Navigation Bar -->
-  <header class="width-80">
+  <!-- Site Container -->
 
-    <!-- Desktop navbar -->
-    <nav class="navbar">
-      <div><a href="index.html">Homepage</a></div>
-      <div class="dropdown">
-        <a href="#">The Band &#x25BC;</a>
-        <div class="dropdown-content">
-          <a href="#">Band History</a>
-          <a href="#">Vacancies</a>
-          <a href="#">Band News</a>
-          <a href="#">Band Forum</a>
+  <div class="container">
+
+    <!-- Header -->
+
+    <header>
+
+      <!-- Desktop navbar -->
+      <nav class="navbar-desktop">
+        <div><a href="index.html">Homepage</a></div>
+        <div class="dropdown">
+          <a href="#">The Band &#x25BC;</a>
+          <div class="dropdown-content">
+            <a href="#">Band History</a>
+            <a href="#">Vacancies</a>
+            <a href="#">Band News</a>
+            <a href="#">Band Forum</a>
+          </div>
+        </div>
+        <div><a href="events.html">Events</a></div>
+        <div><a href="gallery.html">Gallery</a></div>
+        <div><a href="contact.html">Contact Us</a></div>
+      </nav>
+
+      <!-- Mobile navbar -->
+      <nav class="navbar-mobile">
+        <div class="dropdown">
+          <a href="#">Menu &#x25BC;</a>
+          <div class="dropdown-content">
+            <a href="index.html">Homepage</a>
+            <a href="#">The Band</a>
+            <a href="events.html">Events</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="cookies.html">Cookies Policy</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Image -->
+
+    <div class="main_logo">
+      <img src="./resources/images/band_logo_combined.png" alt="Totty Band logo!">
+    </div>
+
+    <!-- Main Content -->
+
+    <div class="main-content">
+
+      <!-- Column 1 -->
+
+      <div class="column_1">
+        <div class="side-content">
+          <span class="side-content-block-colour">News</span>
+          <div class="side-content-news">
+            <span>Please check back to see what's new!</span>
+            <span>You can also check us out on Facebook:</span>
+            <a target="_blank" href="https://www.facebook.com/TottingtonPublicBand/"><img src="./resources/images/facebook.jpg" alt="Link to Facebook."></a>
+          </div>
+          <span class="side-content-block-colour">Guestbook</span>
+          <div class="side-content-guestbook">
+            <span>Use the link below to sign in and leave messages on our Guestbook:</span>
+            <span class="guestbook-button"><a href="#">Guestbook</a></span>
+          </div>
+          <span class="side-content-block-colour">Cookies Policy</span>
+          <div class="cookies-policy">
+            <span>Click the Cookie Monster to view our policy:</span>
+            <a href="./cookies.html"><img src="./resources/images/cookie_monster.jpg" alt="The Cookie Monster."></a>
+          </div>
         </div>
       </div>
-      <div><a href="events.html">Events</a></div>
-      <div><a href="gallery.html">Gallery</a></div>
-      <div><a href="contact.html">Contact Us</a></div>
-    </nav>
 
-    <!-- Mobile navbar -->
-    <nav class="mobile-navbar">
-      <div class="dropdown">
-        <a href="#">Menu &#x25BC;</a>
-        <div class="dropdown-content">
-          <a href="index.html">Homepage</a>
-          <a href="#">The Band</a>
-          <a href="events.html">Events</a>
-          <a href="gallery.html">Gallery</a>
-          <a href="contact.html">Contact Us</a>
-          <a href="cookies.html">Cookies Policy</a>
+      <!-- Column 2 -->
+
+      <div class="column_2">
+        <h1>Tottington Public Band</h1>
+        <h2>Welcome to our website!</h2>
+        <p>Tottington Public Band - from the village of Tottington, Lancashire - is the longest continuously performing brass band in the UK!</p>
+        <p>This site has been designed to show both the human and the professional side of the band. All band members are volunteers; they play for the love of music and the camaraderie built through public performances and competitions.</p>
+
+        <button id="button_1" type="button" name="button" onclick="showhideButton();">Click here to see more!</button>
+
+        <div id="showhide" style="display:none">
+          <p>We hope that you will come and see us play or, better still, book us to play for you. To get in touch, please use the links on our contact page.</p>
+          <p>Alternatively, you can email us at <a href="mailto:webmaster@tottingtonpublicband.co.uk">webmaster@tottingtonpublicband.co.uk</a></p>
+          <p>We are proud to be part of Lancashire's fine tradition of producing quality Brass Bands. We love to perform, and we are available for all types of functions - please see our bookings page.</p>
+          <img src="./resources/images/Totty_band_2013.jpg" alt="The Totty Band in 2013!">
         </div>
-      </div>
-    </nav>
-  </header>
 
-  <!-- Header -->
-
-  <div class="main_logo width-80">
-    <img src="./resources/images/band_logo_combined.png" alt="Totty Band logo!">
-  </div>
-
-  <!-- Main Content Container -->
-
-  <div class="content">
-
-    <!-- Column 1 -->
-
-    <div class="column_1">
-      <div class="side-content">
-        <span class="side-content-block-colour">News</span>
-        <div class="side-content-news">
-          <span>Please check back to see what's new!</span>
-          <span>You can also check us out on Facebook:</span>
-          <a target="_blank" href="https://www.facebook.com/TottingtonPublicBand/"><img src="./resources/images/facebook.jpg" alt="Link to Facebook."></a>
-        </div>
-        <span class="side-content-block-colour">Guestbook</span>
-        <div class="side-content-guestbook">
-          <span>Use the link below to sign in and leave messages on our Guestbook:</span>
-          <span class="guestbook-button"><a href="#">Guestbook</a></span>
-        </div>
-        <span class="side-content-block-colour">Cookies Policy</span>
-        <div class="cookies-policy">
-          <span>Click the Cookie Monster to view our policy:</span>
-          <a href="./cookies.html"><img src="./resources/images/cookie_monster.jpg" alt="The Cookie Monster."></a>
-        </div>
       </div>
     </div>
 
-    <!-- Column 2 -->
+    <!-- Footer -->
 
-    <div class="column_2">
-      <h1>Tottington Public Band</h1>
-      <h2>Welcome to our website!</h2>
-      <p>Tottington Public Band - from the village of Tottington, Lancashire - is the longest continuously performing brass band in the UK!</p>
-      <p>This site has been designed to show both the human and the professional side of the band. All band members are volunteers; they play for the love of music and the camaraderie built through public performances and competitions.</p>
-
-      <button id="button_1" type="button" name="button" onclick="showhideButton();">Click here to see more!</button>
-
-      <div id="showhide" style="display:none">
-        <p>We hope that you will come and see us play or, better still, book us to play for you. To get in touch, please use the links on our contact page.</p>
-        <p>Alternatively, you can email us at <a href="mailto:webmaster@tottingtonpublicband.co.uk">webmaster@tottingtonpublicband.co.uk</a></p>
-        <p>We are proud to be part of Lancashire's fine tradition of producing quality Brass Bands. We love to perform, and we are available for all types of functions - please see our bookings page.</p>
-        <img src="./resources/images/Totty_band_2013.jpg" alt="The Totty Band in 2013!">
-      </div>
-
-    </div>
+    <footer>
+      <span>Copyright &copy; 2018 - Designed and Maintained by 'mg'.</span>
+    </footer>
   </div>
-
-  <!-- Footer -->
-
-  <footer class="width-80">
-    <span>Copyright &copy; 2018 - Designed and Maintained by 'mg'.</span>
-  </footer>
-
 </body>
 </html>
 

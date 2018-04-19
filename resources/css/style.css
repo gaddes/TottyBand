@@ -1,3 +1,5 @@
+/* Font Styles etc. */
+
 * {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -20,21 +22,21 @@ h1, h2 {
   font-weight: 400;
 }
 
-/* Set width of main containers */
-.content, .width-80 {
-  width: 80%;
+/* Site Container */
+
+.container {
   max-width: 960px;
-  overflow: hidden;
+  margin: 0 auto;
 }
 
 /* Text and images will re-size to suit browser width */
-.content h1, h2, p, img {
+.container h1, h2, p, img {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
-/* Navigation Bar */
+/* Header */
 
 header nav {
   background-color: #dee0e2;
@@ -50,7 +52,7 @@ header nav {
   left: 50%;
   transform: translateX(-50%);
 
-  width: 80%;
+  width: 100%;
   max-width: 960px;
   height: auto;
   z-index: 1;
@@ -76,7 +78,7 @@ header nav div:hover, .dropdown:hover .dropdown-content {
   background-color: #f2f3f4;
 }
 
-.mobile-navbar {
+.navbar-mobile {
   display: none;
 }
 
@@ -102,24 +104,22 @@ header nav div:hover, .dropdown:hover .dropdown-content {
   border-bottom: 1px solid black;
 }
 
-/* Main Logo */
+/* Main Image */
 
 .main_logo {
   margin: 1rem auto;
   padding-top: 2rem;
-
-  margin: header nav height;
 }
 
 .main_logo img {
   max-height: 200px; /* Image looks distorted if height exceeds 200px */
-  width: 100%;
+  width: 98%;
   margin: auto;
 }
 
 /* Main Content Container */
 
-.content {
+.main-content {
   margin: 0 auto;
   background-color: #FFF;
 
@@ -259,7 +259,7 @@ button {
 /* Text styles (using classes) */
 
 .bold {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .italic {
@@ -306,27 +306,14 @@ footer nav span {
 
 /* Media Queries */
 
-@media only screen and (max-width: 1024px) {
-  .content, .width-80 {
-    width: 95%;
-  }
-  .main_logo img {
-    width: 98%;
-    margin: auto;
-  }
-  header nav {
-    width: 95%;
-  }
-  footer {
-    margin-bottom: 2.5%;
-  }
+@media only screen and (max-width: 960px) {
   .gallery-column {
     flex: 50%;
     max-width: 50%;
   }
 }
 
-@media only screen and (max-width: 641px) {
+@media only screen and (max-width: 700px) {
   .column_1 {
     display: none;
   }
@@ -336,10 +323,10 @@ footer nav span {
   .column_2 h1, h2 {
     text-align: center;
   }
-  .navbar {
+  .navbar-desktop {
     display: none;
   }
-  .mobile-navbar {
+  .navbar-mobile {
     display: inline-block;
   }
   .dropdown-content {
@@ -349,7 +336,6 @@ footer nav span {
     flex: 100%;
     max-width: 100%;
   }
-
   button {
     display: block;
     margin: 0 auto 1.2rem auto;
