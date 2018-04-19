@@ -10,103 +10,106 @@
 </head>
 <body>
 
-  <!-- Navigation Bar -->
-  <header class="width-80">
+  <!-- Site Container -->
 
-    <!-- Desktop navbar -->
-    <nav class="navbar">
-      <div><a href="index.html">Homepage</a></div>
-      <div class="dropdown">
-        <a href="#">The Band &#x25BC;</a>
-        <div class="dropdown-content">
-          <a href="#">Band History</a>
-          <a href="#">Vacancies</a>
-          <a href="#">Band News</a>
-          <a href="#">Band Forum</a>
+  <div class="container">
+
+    <!-- Header -->
+
+    <header>
+
+      <!-- Desktop navbar -->
+      <nav class="navbar-desktop">
+        <a class="navbar-btn" href="index.html">Homepage</a>
+        <div class="navbar-btn dropdown">
+          <a href="#">The Band &#x25BC;</a>
+          <div class="navbar-btn dropdown-content">
+            <a class="navbar-btn" href="#">Vacancies</a>
+            <a class="navbar-btn" href="#">Band News</a>
+            <a class="navbar-btn" href="#">Band Forum</a>
+          </div>
+        </div>
+        <a class="navbar-btn" href="events.html">Events</a>
+        <a class="navbar-btn" href="gallery.html">Gallery</a>
+        <a class="navbar-btn" href="contact.html">Contact Us</a>
+      </nav>
+
+      <!-- Mobile navbar -->
+      <nav class="navbar-mobile">
+        <div class="navbar-btn dropdown">
+          <a href="#">Menu &#x25BC;</a>
+          <div class="navbar-btn dropdown-content">
+            <a class="navbar-btn" href="index.html">Homepage</a>
+            <a class="navbar-btn" href="#">The Band</a>
+            <a class="navbar-btn" href="events.html">Events</a>
+            <a class="navbar-btn" href="gallery.html">Gallery</a>
+            <a class="navbar-btn" href="contact.html">Contact Us</a>
+            <a class="navbar-btn" href="cookies.html">Cookies Policy</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Image -->
+
+    <div class="main-logo">
+      <img src="./resources/images/band_logo_combined.png" alt="Totty Band logo!">
+    </div>
+
+    <!-- Main Content -->
+
+    <div class="main-content">
+
+      <!-- Column 1 -->
+
+      <div class="column_1">
+        <div class="side-content">
+          <span class="side-content-title">News</span>
+          <div class="side-content-body">
+            <span>Please check back to see what's new!</span>
+            <span>You can also check us out on Facebook:</span>
+            <a target="_blank" href="https://www.facebook.com/TottingtonPublicBand/"><img src="./resources/images/facebook.jpg" alt="Link to Facebook."></a>
+          </div>
+          <span class="side-content-title">Guestbook</span>
+          <div class="side-content-body">
+            <span>Use the link below to sign in and leave messages on our Guestbook:</span>
+            <span class="side-content-button"><a href="#">Guestbook</a></span>
+          </div>
+          <span class="side-content-title">Cookies Policy</span>
+          <div class="side-content-body">
+            <span>Click the Cookie Monster to view our policy:</span>
+            <a href="./cookies.html"><img src="./resources/images/cookie_monster.jpg" alt="The Cookie Monster."></a>
+          </div>
         </div>
       </div>
-      <div><a href="events.html">Events</a></div>
-      <div><a href="gallery.html">Gallery</a></div>
-      <div><a href="contact.html">Contact Us</a></div>
-    </nav>
 
-    <!-- Mobile navbar -->
-    <nav class="mobile-navbar">
-      <div class="dropdown">
-        <a href="#">Menu &#x25BC;</a>
-        <div class="dropdown-content">
-          <a href="index.html">Homepage</a>
-          <a href="#">The Band</a>
-          <a href="events.html">Events</a>
-          <a href="gallery.html">Gallery</a>
-          <a href="contact.html">Contact Us</a>
-          <a href="cookies.html">Cookies Policy</a>
-        </div>
-      </div>
-    </nav>
+      <!-- Column 2 -->
 
-  </header>
-
-  <!-- Header -->
-
-  <div class="main_logo width-80">
-    <img src="./resources/images/band_logo_combined.png" alt="Totty Band logo!">
-  </div>
-
-  <!-- Main Content Container -->
-
-  <div class="content">
-
-    <!-- Column 1 -->
-
-    <div class="column_1">
-      <div class="side-content">
-        <span class="side-content-block-colour">News</span>
-        <div class="side-content-news">
-          <span>Please check back to see what's new!</span>
-          <span>You can also check us out on Facebook:</span>
-          <a target="_blank" href="https://www.facebook.com/TottingtonPublicBand/"><img src="./resources/images/facebook.jpg" alt="Link to Facebook."></a>
-        </div>
-        <span class="side-content-block-colour">Guestbook</span>
-        <div class="side-content-guestbook">
-          <span>Use the link below to sign in and leave messages on our Guestbook:</span>
-          <span class="guestbook-button"><a href="#">Guestbook</a></span>
-        </div>
-        <span class="side-content-block-colour">Cookies Policy</span>
-        <div class="cookies-policy">
-          <span>Click the Cookie Monster to view our policy:</span>
-          <a href="./cookies.html"><img src="./resources/images/cookie_monster.jpg" alt="The Cookie Monster."></a>
-        </div>
+      <div class="column_2">
+        <h1>Cookie Policy</h1>
+        <p class="bold">From May 2011 a new privacy law came into effect across the EU. The law requires that <span class="italic">websites ask visitors for consent to use most Web cookies.</span></p>
+        <p>The <a target="_blank" href="https://ico.org.uk/for-organisations/guide-to-pecr/cookies-and-similar-technologies/">Information Commissioner's Office (ICO)</a> has announced a new data protection code of practice, which advises on how to protect the privacy rights of individuals while dealing with large and rich databases. This waters down the original EU directive, by introducing the concept of 'Implied Consent'. The end user can, if they wish, disable their machine from recording cookies, and advise is given below on how to monitor and manage cookies.</p>
+        <p class="bold">Why are cookies essential to how customers use the Band Website?</p>
+        <p>This website, along with most other major websites, uses cookies. Cookies are pieces of information that a website transfers to the cookie file on your computer's hard disk. Cookies enable users to navigate around websites and (where appropriate) enable us to tailor the content to fit the needs of visitors who have accessed the Site and help us improve the user experience. Without cookies enabled we cannot guarantee that the website and your experience whilst visiting are as we intended it to be. <span class="bold">None of the cookies used on our websites collect personally identifiable information about you.</span></p>
+        <p class="bold">We use cookies in the following ways:</p>
+        <p>To track how visitors reached our site and how they use the site in order that the site can be improved for visitors. To do this it uses both Session Cookies and Persistent Cookies as described below. None of these cookies use personally identifiable information about you.</p>
+        <p>The use of cookies is useful in helping you navigate about a site, for example, it is the use of a session cookie that allows the 'back button' to know where to go to.</p>
+        <p>We do not allow advertising on this site and no information is gathered, stored or shared with any other organisations, nor is anything on the site able to provide any of your details, personal or otherwise.</p>
+        <p class="bold">Two types of cookies are used on this website:</p>
+        <p><span class="bold">Session Cookies. </span>These are temporary cookies, which only exist in the period you access the website (or more strictly, until you close the browser after accessing the website). Session cookies help our website to remember what you chose on the previous page, therefore avoiding having to re-enter information. On our website, these cookies do not contain personal information, and cannot be used to identify you.</p>
+        <p><span class="bold">Persistent Cookies. </span>These are cookies, which remain on your device after you have visited our website. These cookies help us identify you as a unique visitor (by storing a randomly generated number).</p>
+        <p>The length of time a cookie will remain on your device will depend on the type of cookie. On our website, these cookies do not contain personal information, and cannot be used to identify you.</p>
+        <p class="bold">How to control and delete cookies</p>
+        <p>Tottington Public Band will not use cookies to collect personally identifiable information about you. However, if you wish to restrict or block the cookies which are set by us, or indeed any other website, you can do this through your browser settings. The Help function within your browser should tell you how.</p>
+        <p>Alternatively, you may wish to visit <a target="_blank" href="http://www.aboutcookies.org.uk/">www.aboutcookies.org.uk</a> which contains comprehensive information on how to do this on a wide variety of browsers. You will also find details on how to delete cookies from your computer (including those from this visit) as well as more general information about cookies. For information on how to do this on the browser of your mobile device you will need to refer to your handset manual.</p>
       </div>
     </div>
 
-    <!-- Column 2 -->
+    <!-- Footer -->
 
-    <div class="column_2">
-      <h1>Cookie Policy</h1>
-      <p class="bold">From May 2011 a new privacy law came into effect across the EU. The law requires that <span class="italic">websites ask visitors for consent to use most Web cookies.</span></p>
-      <p>The <a target="_blank" href="https://ico.org.uk/for-organisations/guide-to-pecr/cookies-and-similar-technologies/">Information Commissioner's Office (ICO)</a> has announced a new data protection code of practice, which advises on how to protect the privacy rights of individuals while dealing with large and rich databases. This waters down the original EU directive, by introducing the concept of 'Implied Consent'. The end user can, if they wish, disable their machine from recording cookies, and advise is given below on how to monitor and manage cookies.</p>
-      <p class="bold">Why are cookies essential to how customers use the Band Website?</p>
-      <p>This website, along with most other major websites, uses cookies. Cookies are pieces of information that a website transfers to the cookie file on your computer's hard disk. Cookies enable users to navigate around websites and (where appropriate) enable us to tailor the content to fit the needs of visitors who have accessed the Site and help us improve the user experience. Without cookies enabled we cannot guarantee that the website and your experience whilst visiting are as we intended it to be. <span class="bold">None of the cookies used on our websites collect personally identifiable information about you.</span></p>
-      <p class="bold">We use cookies in the following ways:</p>
-      <p>To track how visitors reached our site and how they use the site in order that the site can be improved for visitors. To do this it uses both Session Cookies and Persistent Cookies as described below. None of these cookies use personally identifiable information about you.</p>
-      <p>The use of cookies is useful in helping you navigate about a site, for example, it is the use of a session cookie that allows the 'back button' to know where to go to.</p>
-      <p>We do not allow advertising on this site and no information is gathered, stored or shared with any other organisations, nor is anything on the site able to provide any of your details, personal or otherwise.</p>
-      <p class="bold">Two types of cookies are used on this website:</p>
-      <p><span class="bold">Session Cookies. </span>These are temporary cookies, which only exist in the period you access the website (or more strictly, until you close the browser after accessing the website). Session cookies help our website to remember what you chose on the previous page, therefore avoiding having to re-enter information. On our website, these cookies do not contain personal information, and cannot be used to identify you.</p>
-      <p><span class="bold">Persistent Cookies. </span>These are cookies, which remain on your device after you have visited our website. These cookies help us identify you as a unique visitor (by storing a randomly generated number).</p>
-      <p>The length of time a cookie will remain on your device will depend on the type of cookie. On our website, these cookies do not contain personal information, and cannot be used to identify you.</p>
-      <p class="bold">How to control and delete cookies</p>
-      <p>Tottington Public Band will not use cookies to collect personally identifiable information about you. However, if you wish to restrict or block the cookies which are set by us, or indeed any other website, you can do this through your browser settings. The Help function within your browser should tell you how.</p>
-      <p>Alternatively, you may wish to visit <a target="_blank" href="http://www.aboutcookies.org.uk/">www.aboutcookies.org.uk</a> which contains comprehensive information on how to do this on a wide variety of browsers. You will also find details on how to delete cookies from your computer (including those from this visit) as well as more general information about cookies. For information on how to do this on the browser of your mobile device you will need to refer to your handset manual.</p>
-    </div>
+    <footer>
+      <span>Copyright &copy; 2018 - Designed and Maintained by 'mg'.</span>
+    </footer>
   </div>
-
-  <!-- Footer -->
-
-  <footer class="width-80">
-    <span>Copyright &copy; 2018 - Designed and Maintained by 'mg'.</span>
-  </footer>
-
 </body>
 </html>
