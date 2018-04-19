@@ -95,12 +95,6 @@ header nav {
   }
 }
 
-/* .dropdown {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
-
 .dropdown-content {
   display: none;
   position: absolute;
@@ -134,12 +128,19 @@ header nav {
 .main-logo {
   margin: 1rem auto;
   padding-top: 2rem;
+
+  /* font-family: 'Indie Flower', cursive; */
+  font-family: 'Poiret One', cursive;
+  font-size: 4.5rem;
+  text-align: center;
+
+  transition: all 0.4s ease-in;
 }
 
-.main-logo img {
-  max-height: 200px; /* Image looks distorted if height exceeds 200px */
-  width: 98%;
-  margin: auto;
+@media only screen and (max-width: 700px) {
+  .main-logo {
+    font-size: 2.5rem;
+  }
 }
 
 /* Main Content Container */
@@ -271,6 +272,8 @@ button {
   flex: 25%;
   max-width: 25%;
   padding: 0 0.25rem;
+
+  transition: all 0.4s ease-in;
 }
 
 /* Increase size of each image so that it takes up HALF the screen. */
@@ -296,17 +299,15 @@ button {
 /* Footer */
 
 footer {
-  height: 5rem;
+  height: 3rem;
   background-color: #DFE3E2;
-  margin: 0 auto 0 auto;
-  padding: 1rem 0;
   border-top: 1px solid black;
+  font-size: 0.8rem;
 
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  text-align: center;
 }
 
 footer nav span {
