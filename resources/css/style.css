@@ -10,6 +10,11 @@ html {
   font-size: 16px;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 200;
@@ -58,7 +63,20 @@ header nav {
   z-index: 1;
 }
 
-header nav div {
+/* header nav div {
+  padding: 0.5rem;
+  height: inherit;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+  flex-grow: 2;
+  text-align: center;
+} */
+
+.navbar-btn {
+  font-weight: 400;
+  color: black;
+  text-decoration: none;
+
   padding: 0.5rem;
   height: inherit;
   border-left: 1px solid grey;
@@ -67,14 +85,12 @@ header nav div {
   text-align: center;
 }
 
-header nav a {
-  font-weight: 400;
-  color: black;
-  text-decoration: none;
-}
-
 /* Change background-color on hover */
-header nav div:hover, .dropdown:hover .dropdown-content {
+/* header nav a:hover, .dropdown:hover .dropdown-content {
+  background-color: #f2f3f4;
+} */
+
+.navbar-btn:hover, .dropdown:hover .dropdown-content {
   background-color: #f2f3f4;
 }
 
@@ -106,12 +122,12 @@ header nav div:hover, .dropdown:hover .dropdown-content {
 
 /* Main Image */
 
-.main_logo {
+.main-logo {
   margin: 1rem auto;
   padding-top: 2rem;
 }
 
-.main_logo img {
+.main-logo img {
   max-height: 200px; /* Image looks distorted if height exceeds 200px */
   width: 98%;
   margin: auto;
