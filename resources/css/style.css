@@ -145,7 +145,7 @@ header nav div:hover, .dropdown:hover .dropdown-content {
   flex-direction: column;
 }
 
-.side-content-block-colour {
+.side-content-title {
   height: 1.5rem;
   background-color: #650302;
   color: #FFF;
@@ -155,7 +155,7 @@ header nav div:hover, .dropdown:hover .dropdown-content {
   justify-content: center;
 }
 
-.side-content-news {
+.side-content-body {
   height: auto;
   text-align: center;
   margin: 0.5rem;
@@ -166,45 +166,13 @@ header nav div:hover, .dropdown:hover .dropdown-content {
   align-items: center;
 }
 
-.side-content-news span, img {
+.side-content-body span, img {
   font-style: italic;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
 
-.side-content-visitors {
-  height: auto;
-  text-align: center;
-  margin: 0.5rem;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.side-content-visitors span {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.side-content-guestbook {
-  height: auto;
-  text-align: center;
-  margin: 0.5rem;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.side-content-guestbook span {
-  padding: 0.5rem 0;
-  font-style: italic;
-}
-
-.side-content-guestbook .guestbook-button {
+.side-content-button {
   width: 98%;
   padding: 0.5rem;
   margin: 0.5rem 0;
@@ -213,25 +181,8 @@ header nav div:hover, .dropdown:hover .dropdown-content {
   font-weight: 400;
 }
 
-.side-content-guestbook .guestbook-button:hover {
+.side-content-button:hover {
   background-color: #f2f3f4;
-}
-
-.cookies-policy {
-  height: auto;
-  margin: 0.5rem;
-  text-align: center;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.cookies-policy span, img {
-  font-style: italic;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
 }
 
 /* Column 2 */
