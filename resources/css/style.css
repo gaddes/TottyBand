@@ -63,15 +63,6 @@ header nav {
   z-index: 1;
 }
 
-/* header nav div {
-  padding: 0.5rem;
-  height: inherit;
-  border-left: 1px solid grey;
-  border-right: 1px solid grey;
-  flex-grow: 2;
-  text-align: center;
-} */
-
 .navbar-btn {
   font-weight: 400;
   color: black;
@@ -85,18 +76,29 @@ header nav {
   text-align: center;
 }
 
-/* Change background-color on hover */
-/* header nav a:hover, .dropdown:hover .dropdown-content {
-  background-color: #f2f3f4;
-} */
-
-.navbar-btn:hover, .dropdown:hover .dropdown-content {
+.navbar-btn:hover {
   background-color: #f2f3f4;
 }
 
 .navbar-mobile {
   display: none;
 }
+
+/* Switch to mobile navbar. */
+@media only screen and (max-width: 700px) {
+  .navbar-desktop {
+    display: none;
+  }
+  .navbar-mobile {
+    display: inline-block;
+  }
+}
+
+/* .dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
 
 .dropdown-content {
   display: none;
@@ -118,6 +120,12 @@ header nav {
   padding: 0.5rem 0;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
+}
+
+@media only screen and (max-width: 700px) {
+  .dropdown-content {
+    width: 98%;
+  }
 }
 
 /* Main Image */
@@ -151,6 +159,13 @@ header nav {
 
   display: flex;
   flex-direction: column;
+}
+
+/* Hide sidebar when screen width decreases. */
+@media only screen and (max-width: 700px) {
+  .column_1 {
+    display: none;
+  }
 }
 
 .side-content {
@@ -218,9 +233,26 @@ header nav {
   padding-bottom: 0.7rem;
 }
 
+@media only screen and (max-width: 700px) {
+  .column_2 {
+    width: 100%;
+  }
+  .column_2 h1, h2 {
+    text-align: center;
+  }
+}
+
 button {
   padding: 0.5rem;
   border-radius: 0.5rem;
+}
+
+@media only screen and (max-width: 700px) {
+  button {
+    display: block;
+    margin: 0 auto 1.2rem auto;
+    padding: 0.75rem;
+  }
 }
 
 /* Text styles (using classes) */
@@ -267,12 +299,7 @@ footer nav span {
   padding: 0 0.25rem;
 }
 
-.gallery-column img {
-  vertical-align: middle;
-}
-
-/* Media Queries */
-
+/* Increase size of each image so that it takes up HALF the screen. */
 @media only screen and (max-width: 960px) {
   .gallery-column {
     flex: 50%;
@@ -280,32 +307,14 @@ footer nav span {
   }
 }
 
+/* Increase size of each image so that it takes up the FULL screen. */
 @media only screen and (max-width: 700px) {
-  .column_1 {
-    display: none;
-  }
-  .column_2 {
-    width: 100%;
-  }
-  .column_2 h1, h2 {
-    text-align: center;
-  }
-  .navbar-desktop {
-    display: none;
-  }
-  .navbar-mobile {
-    display: inline-block;
-  }
-  .dropdown-content {
-    width: 95%;
-  }
   .gallery-column {
     flex: 100%;
     max-width: 100%;
   }
-  button {
-    display: block;
-    margin: 0 auto 1.2rem auto;
-    padding: 0.75rem;
-  }
+}
+
+.gallery-column img {
+  vertical-align: middle;
 }
