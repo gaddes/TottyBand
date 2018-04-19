@@ -7,6 +7,8 @@
 }
 
 html {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
   font-size: 16px;
 }
 
@@ -16,9 +18,7 @@ a {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 200;
-  background-color: #9FCCFF;
+  background-color: #D9EBFF;
   margin: 0px;
   padding: 0px;
 }
@@ -44,41 +44,41 @@ h1, h2 {
 /* Header */
 
 header nav {
-  background-color: #dee0e2;
-  top: 0;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  box-shadow: 0px 2px 4px darkgrey;
-
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  justify-content: space-between;
+  border-bottom: 1px solid black;
+  box-shadow: 0px 1px 0px darkgrey;
 
   position: fixed;
-  left: 50%;
-  transform: translateX(-50%);
-
-  width: 100%;
+  z-index: 5;
+  background-color: #D9EBFF;
   max-width: 960px;
-  height: auto;
-  z-index: 1;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 4rem;
 }
 
 .navbar-btn {
   font-weight: 400;
   color: black;
   text-decoration: none;
+  background-color: #D0E9FF;
+  text-align: center;
 
   padding: 0.5rem;
-  height: inherit;
-  border-left: 1px solid grey;
-  border-right: 1px solid grey;
-  flex-grow: 2;
-  text-align: center;
+  height: 2rem;
+  border: 1px solid grey;
+  border-radius: 0.5rem;
+  box-shadow: 0px 2px 4px darkgrey;
+
+  transition: all 0.2s ease-in;
 }
 
 .navbar-btn:hover {
-  background-color: #f2f3f4;
+  background-color: #9FCCFF;
 }
 
 .navbar-mobile {
@@ -127,7 +127,7 @@ header nav {
 
 .main-logo {
   margin: 1rem auto;
-  padding-top: 2rem;
+  padding-top: 4rem;
 
   /* font-family: 'Indie Flower', cursive; */
   font-family: 'Poiret One', cursive;
@@ -157,7 +157,9 @@ header nav {
 .column_1 {
   width: 10rem;
   padding: 0 10px;
-  background-color: #dee0e2;
+  background-color: #D9EBFF;
+  border: 1px solid black;
+  /* box-shadow: 0px 2px 2px darkgrey; */
 
   display: flex;
   flex-direction: column;
@@ -181,7 +183,7 @@ header nav {
 
 .side-content-title {
   height: 1.5rem;
-  background-color: #54A4FF;
+  background-color: #9FCCFF;
   font-weight: 400;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
@@ -226,6 +228,7 @@ header nav {
 .column_2 {
   width: 85%;
   padding: 0 0.5rem;
+  background-color: #D9EBFF;
 }
 
 .column_2 h1 {
@@ -299,8 +302,9 @@ button {
 /* Footer */
 
 footer {
+  margin-top: 1rem;
   height: 3rem;
-  background-color: #DFE3E2;
+  background-color: #D9EBFF;
   border-top: 1px solid black;
   font-size: 0.8rem;
 
