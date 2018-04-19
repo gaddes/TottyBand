@@ -18,7 +18,7 @@ a {
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 200;
-  background-color: #650302;
+  background-color: #9FCCFF;
   margin: 0px;
   padding: 0px;
 }
@@ -48,6 +48,7 @@ header nav {
   top: 0;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
+  box-shadow: 0px 2px 4px darkgrey;
 
   display: flex;
   align-items: center;
@@ -171,6 +172,7 @@ header nav {
 .side-content {
   margin: 1rem auto;
   border: 1px solid black;
+  border-top: none; /* This border is provided by the first .side-content-title. */
 
   display: flex;
   flex-direction: column;
@@ -178,8 +180,10 @@ header nav {
 
 .side-content-title {
   height: 1.5rem;
-  background-color: #650302;
-  color: #FFF;
+  background-color: #54A4FF;
+  font-weight: 400;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 
   display: flex;
   align-items: center;
@@ -255,36 +259,6 @@ button {
   }
 }
 
-/* Text styles (using classes) */
-
-.bold {
-  font-weight: 700;
-}
-
-.italic {
-  font-style: italic;
-}
-
-/* Footer */
-
-footer {
-  height: 5rem;
-  background-color: #DFE3E2;
-  margin: 0 auto 0 auto;
-  padding: 1rem 0;
-  border-top: 1px solid black;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
-}
-
-footer nav span {
-  padding: 0 0.625rem;
-}
-
 /* Gallery & Images */
 
 .gallery-row {
@@ -317,4 +291,24 @@ footer nav span {
 
 .gallery-column img {
   vertical-align: middle;
+}
+
+/* Footer */
+
+footer {
+  height: 5rem;
+  background-color: #DFE3E2;
+  margin: 0 auto 0 auto;
+  padding: 1rem 0;
+  border-top: 1px solid black;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+footer nav span {
+  padding: 0 0.625rem;
 }
