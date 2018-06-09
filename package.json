@@ -1,0 +1,21 @@
+{
+  "name": "Totty Band",
+  "version": "1.0.0",
+  "description": "Totty Band",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "Matt Gaddes",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "4.0.0-beta",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
+}
