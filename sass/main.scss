@@ -1,0 +1,39 @@
+// Bootstrap overrides (must come BEFORE bootstrap import)
+// $primary: red;
+
+// Custom SCSS
+@import './abstracts/variables';
+// @import './base';
+// @import './components';
+// @import './layout';
+
+.mg-hero {
+    background-image: url("../resources/images/hero.jpeg");
+    background-size: cover;
+    margin-top: 57px;
+    height: 95vh;
+    // TODO: place this 'dark-overlay' div in HTML file
+    .dark-overlay {
+        background-color: $dark-overlay;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 700px;
+    }
+}
+
+.navbar-nav {
+    .nav-item {
+        .nav-link {
+            transition: 0.3s;
+        }
+        .nav-link:hover {
+            border-bottom: 0.1rem solid grey;
+            padding-bottom: 0.4rem;
+        }
+    }
+}
+
+// Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
