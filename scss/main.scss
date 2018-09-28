@@ -2,10 +2,9 @@
 // $primary: red;
 
 // Custom SCSS
+// @import './reset'; NOTE: this may muck-up built-in Bootstrap styles
 @import './variables';
-// @import './base';
-// @import './components';
-// @import './layout';
+// @import './buttons'; NOTE: currently the button naming convention is the same as bootstrap and will therefore override Bootstrap styles
 
 .mg-hero {
     background-image: url("../resources/images/hero.jpeg");
@@ -14,7 +13,7 @@
     height: 95vh;
     // TODO: place this 'dark-overlay' div in HTML file
     .dark-overlay {
-        background-color: $dark-overlay;
+        background-color: $overlay-dark;
         position: absolute;
         top: 0;
         left: 0;

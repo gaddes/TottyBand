@@ -1,1 +1,15 @@
-$dark-overlay: rgba(0,0,0,0.4);
+// Colours
+$colour-standard: lightgrey;
+$colour-success: green;
+$colour-warning: orange;
+$colour-error: red;
+$colour-white: white;
+
+$overlay-dark: rgba(0,0,0,0.4);
+
+// Line Weight
+$line-weight-standard: 5px;
+
+// Box Shadow
+$box-shadow-standard: 0px 2px 5px 0px $colour-standard;
+$box-shadow-large: 0px 5px 10px 0px $colour-standard;

@@ -1,0 +1,59 @@
+// MIXINS
+
+@mixin border-radius($property) {
+    -webkit-border-radius: $property;
+    -moz-border-radius: $property;
+    border-radius: $property;
+}
+
+@mixin border-and-background-colour($property) {
+    border-color: $property; // Update border-color
+    &:hover {
+        background-color: $property; // Update background-color on hover
+    }
+}
+
+@mixin box-shadow($property) {
+    -webkit-box-shadow: $property;
+    -moz-box-shadow: $property;
+    box-shadow: $property;
+}
+
+// PLACEHOLDERS
+
+%button-shared {
+    cursor: pointer;
+    border: 1px solid;
+    padding: 0.5rem 1rem;
+    @include border-radius($line-weight-standard);
+    transition: 0.3s;
+    &:hover {
+        color: $colour-white;
+        @include box-shadow($box-shadow-standard);
+        &:active {
+            box-shadow: none; // Remove box shadow when clicked
+        }
+    }
+}
+
+// BUTTONS
+
+.btn-standard {
+    @extend %button-shared;
+    @include border-and-background-colour($colour-standard);
+}
+
+.btn-success {
+    @extend %button-shared;
+    @include border-and-background-colour($colour-success);
+}
+
+.btn-warning {
+    @extend %button-shared;
+    @include border-and-background-colour($colour-warning);
+}
+
+.btn-error {
+    @extend %button-shared;
+    @include border-and-background-colour($colour-error);
+}
