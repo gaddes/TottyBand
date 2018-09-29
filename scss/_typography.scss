@@ -1,0 +1,30 @@
+// 
+// Variables
+// 
+
+$font-weight-light: 300;
+$font-weight-standard: 400;
+$font-weight-bold: 700;
+
+// 
+// Global Defaults
+// 
+
+// NOTE: to override default Bootstrap fonts, see _reboot.scss line 59
+
+// 
+// Global Elements
+// 
+
+h1 {
+    font-weight: $font-weight-light;
+    font-size: 3.2rem;
+    display: flex;
+    justify-content: center;
+    padding: 0.7rem 0;
+}
+
+h2 {
+    font-weight: $font-weight-light;
+    font-size: 2rem;
+}

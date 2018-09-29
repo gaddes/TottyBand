@@ -2,8 +2,10 @@
 // Custom SCSS and Bootstrap overrides (must come BEFORE bootstrap import)
 // 
 
-// @import './reset'; NOTE: this can be used as an alternative to Bootstrap _reboot.scss (imported at the bottom of this page), however the Bootstrap _reboot is far more comprehensive and is built to support many older and alternative browsers.
+@import './reset'; // NOTE: this can be used as an alternative to Bootstrap _reboot.scss (imported at the bottom of this page), however the Bootstrap _reboot is far more comprehensive and is built to support many older and alternative browsers.
 @import './variables';
+@import './typography';
+@import './classes';
 // @import './buttons'; NOTE: currently the button naming convention is the same as bootstrap and will therefore override Bootstrap styles
 
 nav {
@@ -21,35 +23,98 @@ nav {
     }
 }
 
-.mg-hero {
+.hero {
     background-image: url("../resources/images/hero.jpeg");
     background-size: cover;
-    margin-top: 57px;
-    height: 95vh;
+    margin-top: $navbar-height;
+    height: calc(100vh - #{$navbar-height});
     color: $colour-standard;
-    // TODO: extract .overlay-light and .overlay-dark into their own partial
-    .overlay-light {
-        background-color: $overlay-light;
-        height: 100%;
-        width: 100%;
+    .hero-content {
+        margin-top: auto;
     }
-    .overlay-dark {
-        background-color: $overlay-dark;
-        height: 100%;
-        width: 100%;
-    }
-    .scroll {
-        color: $colour-standard;
-        float: bottom;
+    .hero-scroll {
+        margin-top: auto;
+        margin-bottom: 1rem;
         .material-icons {
-            font-size: 3rem;
-            color: $colour-standard;
+            font-size: 3rem;;
         }
     }
-    small {
-        font-size: .8rem;
+}
+
+.main-body {
+    h1 {
+        border-bottom: solid $line-weight-light $colour-grey;
     }
 }
+
+// 
+// Required CSS for Material Design Icons - https://materialdesignicons.com/bootstrap
+// 
+
+.mdi::before {
+    font-size: 24px;
+    line-height: 14px;
+}
+.btn .mdi::before {
+    position: relative;
+    top: 4px;
+}
+.btn-xs .mdi::before {
+    font-size: 18px;
+    top: 3px;
+}
+.btn-sm .mdi::before {
+    font-size: 18px;
+    top: 3px;
+}
+.dropdown-menu .mdi {
+    width: 18px;
+}
+.dropdown-menu .mdi::before {
+    position: relative;
+    top: 4px;
+    left: -8px;
+}
+.nav .mdi::before {
+    position: relative;
+    top: 4px;
+}
+.navbar .navbar-toggle .mdi::before {
+    position: relative;
+    top: 4px;
+    color: #FFF;
+}
+.breadcrumb .mdi::before {
+    position: relative;
+    top: 4px;
+}
+.breadcrumb a:hover {
+    text-decoration: none;
+}
+.breadcrumb a:hover span {
+    text-decoration: underline;
+}
+.alert .mdi::before {
+    position: relative;
+    top: 4px;
+    margin-right: 2px;
+}
+.input-group-addon .mdi::before {
+    position: relative;
+    top: 3px;
+}
+.navbar-brand .mdi::before {
+    position: relative;
+    top: 2px;
+    margin-right: 2px;
+}
+.list-group-item .mdi::before {
+    position: relative;
+    top: 3px;
+    left: -3px
+}
+
+// BOOTSTRAP must be imported last
 
 // 
 // Option A: Include all of Bootstrap
@@ -101,3 +166,12 @@ nav {
 // @import "../node_modules/bootstrap/scss/popover";
 // @import "../node_modules/bootstrap/scss/carousel";
 // @import "../node_modules/bootstrap/scss/print";
+
+// 
+// MG reset
+// This file is used ONLY to override Bootstrap _reboot.scss
+// For this reason it must be the very last import
+// TODO: Perhaps better practice to directly remove/override the undesirable value within _reboot.scss?
+// 
+
+@import './reset'; 

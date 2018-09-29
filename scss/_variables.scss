@@ -1,14 +1,21 @@
-// Colours
+// Heights and Widths
+$navbar-height: 40px;
+
+// Colours - global
 $colour-standard: lightgrey;
 $colour-success: green;
 $colour-warning: orange;
 $colour-error: red;
 $colour-white: white;
+$colour-grey: grey;
+$colour-black: black;
 
+// Colours - overlay
 $overlay-dark: rgba(0,0,0,0.5);
 $overlay-light: rgba(211,211,211,0.8);
 
 // Line Weight
+$line-weight-light: 2px;
 $line-weight-standard: 5px;
 
 // Box Shadow
