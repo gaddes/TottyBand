@@ -6,22 +6,6 @@
 @import './variables';
 // @import './buttons'; NOTE: currently the button naming convention is the same as bootstrap and will therefore override Bootstrap styles
 
-.mg-hero {
-    background-image: url("../resources/images/hero.jpeg");
-    background-size: cover;
-    margin-top: 57px;
-    height: 95vh;
-    // TODO: place this 'dark-overlay' div in HTML file
-    .dark-overlay {
-        background-color: $overlay-dark;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        min-height: 700px;
-    }
-}
-
 .navbar-nav {
     .nav-item {
         .nav-link {
@@ -31,6 +15,36 @@
             border-bottom: 0.1rem solid grey;
             padding-bottom: 0.4rem;
         }
+    }
+}
+
+.mg-hero {
+    background-image: url("../resources/images/hero.jpeg");
+    background-size: cover;
+    margin-top: 57px;
+    height: 95vh;
+    color: $colour-standard;
+    // TODO: extract .overlay-light and .overlay-dark into their own partial
+    .overlay-light {
+        background-color: $overlay-light;
+        height: 100%;
+        width: 100%;
+    }
+    .overlay-dark {
+        background-color: $overlay-dark;
+        height: 100%;
+        width: 100%;
+    }
+    .scroll {
+        color: $colour-standard;
+        float: bottom;
+        .material-icons {
+            font-size: 3rem;
+            color: $colour-standard;
+        }
+    }
+    small {
+        font-size: .8rem;
     }
 }
 
