@@ -8,20 +8,26 @@
 @import './classes';
 // @import './buttons'; NOTE: currently the button naming convention is the same as bootstrap and will therefore override Bootstrap styles
 
+// FIXME: background colour (Bootstrap override - should these be placed in their own partial?)
+body {
+    background-color: $body-bg;
+}
+
 nav {
     box-shadow: $box-shadow-navbar;
     .navbar-nav {
         min-height: $navbar-height;
         .nav-item {
+            height: 100%;
             .nav-link {
-                transition: 0.3s;
+                transition: color 0.3s, border-bottom 0s;
             }
             .nav-link:hover {
                 border-bottom: 0.1rem solid grey;
                 padding-bottom: 0.4rem;
             }
             .mdi {
-                // font-size: 1.5rem;
+                // font-size: 1.3rem;
                 // FIXME: why are MDI icons not square?! If we make the icon larger, it increases the height of the navbar (we don't want this!)
             }
         }
