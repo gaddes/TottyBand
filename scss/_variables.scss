@@ -12,5 +12,7 @@ $overlay-light: rgba(211,211,211,0.8);
 $line-weight-standard: 5px;
 
 // Box Shadow
+$box-shadow-small: 0px 1px 2px 0px $colour-standard;
 $box-shadow-standard: 0px 2px 5px 0px $colour-standard;
 $box-shadow-large: 0px 5px 10px 0px $colour-standard;
+$box-shadow-navbar: 0px 1px 1px 0px $overlay-dark;

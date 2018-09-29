@@ -1,19 +1,22 @@
-// Bootstrap overrides (must come BEFORE bootstrap import)
-// $primary: red;
+// 
+// Custom SCSS and Bootstrap overrides (must come BEFORE bootstrap import)
+// 
 
-// Custom SCSS
-// @import './reset'; NOTE: this may muck-up built-in Bootstrap styles
+// @import './reset'; NOTE: this can be used as an alternative to Bootstrap _reboot.scss (imported at the bottom of this page), however the Bootstrap _reboot is far more comprehensive and is built to support many older and alternative browsers.
 @import './variables';
 // @import './buttons'; NOTE: currently the button naming convention is the same as bootstrap and will therefore override Bootstrap styles
 
-.navbar-nav {
-    .nav-item {
-        .nav-link {
-            transition: 0.3s;
-        }
-        .nav-link:hover {
-            border-bottom: 0.1rem solid grey;
-            padding-bottom: 0.4rem;
+nav {
+    box-shadow: $box-shadow-navbar;
+    .navbar-nav {
+        .nav-item {
+            .nav-link {
+                transition: 0.3s;
+            }
+            .nav-link:hover {
+                border-bottom: 0.1rem solid grey;
+                padding-bottom: 0.4rem;
+            }
         }
     }
 }
@@ -48,5 +51,53 @@
     }
 }
 
-// Bootstrap
-@import "../node_modules/bootstrap/scss/bootstrap";
+// 
+// Option A: Include all of Bootstrap
+// 
+
+// @import "../node_modules/bootstrap/scss/bootstrap";
+
+// 
+// Option B: Include parts of Bootstrap
+// 
+
+// Required
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+// Optional - included
+@import "../node_modules/bootstrap/scss/reboot"; // This is a more comprehensive alternative to reset.css
+@import "../node_modules/bootstrap/scss/grid"; // Provides grid functionality
+@import "../node_modules/bootstrap/scss/images"; // Required for images in 'band members' section?
+@import "../node_modules/bootstrap/scss/buttons"; // TODO: May want to override this (or at least the colours/styles?)
+@import "../node_modules/bootstrap/scss/card"; // Required for card layout of 'band members'
+@import "../node_modules/bootstrap/scss/nav"; // Required for navbar
+@import "../node_modules/bootstrap/scss/navbar"; // Required for navbar
+@import "../node_modules/bootstrap/scss/utilities"; // Required for navbar (inline layout)
+@import "../node_modules/bootstrap/scss/transitions"; // Required for navbar (transitions)
+
+// Optional - not included
+// @import "../node_modules/bootstrap/scss/root";
+// @import "../node_modules/bootstrap/scss/type";
+// @import "../node_modules/bootstrap/scss/code";
+// @import "../node_modules/bootstrap/scss/tables";
+// @import "../node_modules/bootstrap/scss/forms";
+// @import "../node_modules/bootstrap/scss/dropdown";
+// @import "../node_modules/bootstrap/scss/button-group";
+// @import "../node_modules/bootstrap/scss/input-group";
+// @import "../node_modules/bootstrap/scss/custom-forms";
+// @import "../node_modules/bootstrap/scss/breadcrumb";
+// @import "../node_modules/bootstrap/scss/pagination";
+// @import "../node_modules/bootstrap/scss/badge";
+// @import "../node_modules/bootstrap/scss/jumbotron";
+// @import "../node_modules/bootstrap/scss/alert";
+// @import "../node_modules/bootstrap/scss/progress";
+// @import "../node_modules/bootstrap/scss/media";
+// @import "../node_modules/bootstrap/scss/list-group";
+// @import "../node_modules/bootstrap/scss/close";
+// @import "../node_modules/bootstrap/scss/modal";
+// @import "../node_modules/bootstrap/scss/tooltip";
+// @import "../node_modules/bootstrap/scss/popover";
+// @import "../node_modules/bootstrap/scss/carousel";
+// @import "../node_modules/bootstrap/scss/print";
