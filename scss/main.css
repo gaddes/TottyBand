@@ -22,9 +22,6 @@ h2 {
   height: 100%;
   width: 100%; }
 
-body {
-  background-color: #d7cec7; }
-
 nav {
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.5); }
 
@@ -159,7 +156,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #d7cec7; }
+  background-color: #fff; }
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
@@ -997,7 +994,7 @@ template {
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #d7cec7;
+  background-color: #fff;
   border: 1px solid #dee2e6;
   border-radius: 0.25rem;
   max-width: 100%;
@@ -1776,8 +1773,8 @@ input[type="button"].btn-block {
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
   color: #495057;
-  background-color: #d7cec7;
-  border-color: #dee2e6 #dee2e6 #d7cec7; }
+  background-color: #fff;
+  border-color: #dee2e6 #dee2e6 #fff; }
 
 .nav-tabs .dropdown-menu {
   margin-top: -1px;
