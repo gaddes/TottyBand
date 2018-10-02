@@ -1,5 +1,5 @@
 h1 {
-  margin-bottom: 2rem; }
+  margin-bottom: 0; }
 
 h1 {
   font-weight: 300;
@@ -11,6 +11,9 @@ h1 {
 h2 {
   font-weight: 300;
   font-size: 2rem; }
+
+a {
+  cursor: pointer; }
 
 .overlay-light {
   background-color: rgba(211, 211, 211, 0.8);
@@ -65,7 +68,8 @@ nav .navbar-nav .nav-item .nav-link:hover {
   height: 0; }
 
 .main-body h1 {
-  border-bottom: solid 2px grey; }
+  border-bottom: solid 2px grey;
+  margin-bottom: 2rem; }
 
 .mdi::before {
   font-size: 24px;
@@ -128,6 +132,17 @@ nav .navbar-nav .nav-item .nav-link:hover {
   position: relative;
   top: 3px;
   left: -3px; }
+
+.btn:focus, .btn:active, button:focus, button:active {
+  outline: none !important;
+  box-shadow: none !important; }
+
+#image-gallery .modal-footer {
+  display: block; }
+
+.thumb {
+  margin-top: 15px;
+  margin-bottom: 15px; }
 
 *,
 *::before,
@@ -4106,6 +4121,3 @@ a.text-dark:hover, a.text-dark:focus {
 @media screen and (prefers-reduced-motion: reduce) {
   .collapsing {
     transition: none; } }
-
-h1 {
-  margin-bottom: 2rem; }

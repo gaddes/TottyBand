@@ -65,6 +65,7 @@ nav {
 .main-body {
     h1 {
         border-bottom: solid $line-weight-light $colour-grey;
+        margin-bottom: 2rem;
     }
 }
 
@@ -135,6 +136,24 @@ nav {
     left: -3px
 }
 
+// 
+// CSS for GALLERY
+// 
+
+.btn:focus, .btn:active, button:focus, button:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+#image-gallery .modal-footer{
+    display: block;
+}
+
+.thumb{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
 // BOOTSTRAP must be imported last
 
 // 
@@ -195,4 +214,4 @@ nav {
 // TODO: Perhaps better practice to directly remove/override the undesirable value within _reboot.scss?
 // 
 
-@import './reset'; 
+// @import './reset';

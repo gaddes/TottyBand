@@ -12,6 +12,13 @@
     <link rel="shortcut icon" href="./resources/images/favicon_drum.ico?" type="image/x-icon">
     <!-- Material Design Icons (community) - https://materialdesignicons.com/bootstrap) -->
     <link rel="stylesheet" href="//cdn.materialdesignicons.com/2.5.94/css/materialdesignicons.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+    <!-- GALLERY -->
+    <!-- FIXME:  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <script src="script.js"></script>
   </head>
   <body>
 
@@ -48,8 +55,6 @@
     </nav>
 
     <!-- HERO BANNER -->
-    <!-- TODO: make this fill 100% of vertical screen space -->
-    
     <div class="hero position-relative overflow-hidden text-center">
       <div class="overlay-dark d-flex flex-column justify-content-center">
         <div class="hero-content col-md-10 p-5 mx-auto d-flex flex-column justify-content-center">
@@ -78,7 +83,6 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <h2>Event 3</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <div class="" style="height: 10px;"></div> <!-- Placeholder only. -->
       </div>
 
       <!-- MEMBERS -->
@@ -182,6 +186,149 @@
             </div>
           </div>
         </div>
+      </div>
+
+      <!-- GALLERY -->
+      <!-- TODO: refactor this code taken from - https://bootsnipp.com/snippets/featured/thumbnail-gallery-modal-view-and-key-navigation -->
+      
+      <h1>Gallery</h1>
+      <div class="container">
+
+        <div class="row">
+          <h2>Harwood Field House 2018</h2>
+          <div class="row">
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+              <a class="thumbnail" data-image-id="" data-toggle="modal" data-title=""
+                data-image="./resources/images_full-size/harwood-field-house-2018/IMG_2709.JPG"
+                data-target="#image-gallery">
+                  <img class="img-thumbnail"
+                    src="./resources/images_full-size/harwood-field-house-2018/IMG_2709.JPG"
+                    alt="Another alt text">
+                    <!-- TODO: use compressed image for thumbnail -->
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+              <a class="thumbnail" data-image-id="" data-toggle="modal" data-title=""
+                data-image="./resources/images_full-size/harwood-field-house-2018/IMG_2710.JPG"
+                data-target="#image-gallery">
+                  <img class="img-thumbnail"
+                    src="./resources/images_full-size/harwood-field-house-2018/IMG_2710.JPG"
+                    alt="Another alt text">
+                    <!-- TODO: use compressed image for thumbnail -->
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+              <a class="thumbnail" data-image-id="" data-toggle="modal" data-title=""
+                data-image="./resources/images_full-size/harwood-field-house-2018/IMG_2711.JPG"
+                data-target="#image-gallery">
+                  <img class="img-thumbnail"
+                    src="./resources/images_full-size/harwood-field-house-2018/IMG_2711.JPG"
+                    alt="Another alt text">
+                    <!-- TODO: use compressed image for thumbnail -->
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+              <a class="thumbnail" data-image-id="" data-toggle="modal" data-title=""
+                data-image="./resources/images_full-size/harwood-field-house-2018/IMG_2712.JPG"
+                data-target="#image-gallery">
+                  <img class="img-thumbnail"
+                    src="./resources/images_full-size/harwood-field-house-2018/IMG_2712.JPG"
+                    alt="Another alt text">
+                    <!-- TODO: use compressed image for thumbnail -->
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+              <a class="thumbnail" data-image-id="" data-toggle="modal" data-title=""
+                data-image="./resources/images_full-size/harwood-field-house-2018/IMG_2713.JPG"
+                data-target="#image-gallery">
+                  <img class="img-thumbnail"
+                    src="./resources/images_full-size/harwood-field-house-2018/IMG_2713.JPG"
+                    alt="Another alt text">
+                    <!-- TODO: use compressed image for thumbnail -->
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+              <a class="thumbnail" data-image-id="" data-toggle="modal" data-title=""
+                data-image="./resources/images_full-size/harwood-field-house-2018/IMG_2714.JPG"
+                data-target="#image-gallery">
+                  <img class="img-thumbnail"
+                    src="./resources/images_full-size/harwood-field-house-2018/IMG_2714.JPG"
+                    alt="Another alt text">
+                    <!-- TODO: use compressed image for thumbnail -->
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <h2>Old Pics</h2>
+          <div class="row">
+            <div class="col-lg-3 col-md-4 colx-xs-6 thumb">
+              <a class="thumbnail" data-image-id="" data-toggle="modal" data-title=""
+                data-image="./resources/images_full-size/old-pics/T.P.B. Nuttall Park Circa 1996.jpg"
+                data-target="#image-gallery">
+                  <img class="img-thumbnail"
+                    src="./resources/images_full-size/old-pics/T.P.B. Nuttall Park Circa 1996.jpg"
+                    alt="Another alt text">
+                    <!-- TODO: use compressed image for thumbnail -->
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+              <a class="thumbnail" data-image-id="" data-toggle="modal" data-title=""
+                data-image="./resources/images_full-size/old-pics/Tottington Original Brass Band.jpg"
+                data-target="#image-gallery">
+                  <img class="img-thumbnail"
+                    src="./resources/images_full-size/old-pics/Tottington Original Brass Band.jpg"
+                    alt="Another alt text">
+                    <!-- TODO: use compressed image for thumbnail -->
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+              <a class="thumbnail" data-image-id="" data-toggle="modal" data-title=""
+                data-image="./resources/images_full-size/old-pics/TPB 1992 with text.jpg"
+                data-target="#image-gallery">
+                  <img class="img-thumbnail"
+                    src="./resources/images_full-size/old-pics/TPB 1992 with text.jpg"
+                    alt="Another alt text">
+                    <!-- TODO: use compressed image for thumbnail -->
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+              <a class="thumbnail" data-image-id="" data-toggle="modal" data-title=""
+                data-image="./resources/images_full-size/old-pics/T.P.B. Rem Sunday Circa 1994.jpg"
+                data-target="#image-gallery">
+                  <img class="img-thumbnail"
+                    src="./resources/images_full-size/old-pics/T.P.B. Rem Sunday Circa 1994.jpg"
+                    alt="Another alt text">
+                    <!-- TODO: use compressed image for thumbnail -->
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- MODAL code -->
+
+        <div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="image-gallery-title"></h4>
+                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img id="image-gallery-image" class="img-responsive col-md-12" src="">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary float-left" id="show-previous-image"><i class="fa fa-arrow-left"></i>
+                  </button>
+                  <button type="button" id="show-next-image" class="btn btn-secondary float-right"><i class="fa fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        
       </div>
 
       <!-- CONTACT -->
