@@ -18,7 +18,7 @@
     <!-- NAVBAR -->
     <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
       <div class="container">
-        <a class="navbar-brand" href="index.html">Totty Band</a>
+        <a class="navbar-brand" href="index.html" aria-label="home">Totty Band</a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
           <ul class="navbar-nav">
@@ -36,19 +36,16 @@
             </li>
             <div class="nav-item d-flex">
               <li class="mr-3 mr-sm-0"> <!-- mr-3 specified for xs screens only, as this affects layout in the dropdown (without this, icons are too close together) -->
-                <a class="nav-link" href="https://www.facebook.com/TottingtonPublicBand/" target="_blank" alt="Facebook icon"><i class="mdi mdi-facebook"></i></a>
+                <a class="nav-link" href="https://www.facebook.com/TottingtonPublicBand/" target="_blank" alt="facebook icon" aria-label="facebook"><i class="mdi mdi-facebook"></i></a>
               </li>
               <li class="">
-                <a class="nav-link" href="mailto:tottingtonband@gmail.com"><i class="mdi mdi-email-open-outline" alt="Email icon"></i></a>
+                <a class="nav-link" href="mailto:tottingtonband@gmail.com"><i class="mdi mdi-email-open-outline" alt="email icon" aria-label="email"></i></a>
               </li>
             </div>
           </ul>
         </div>
       </div>
     </nav>
-
-    <!-- BLANK SPACE -->
-    <!-- <div style="height:75px;"></div> Blank space to account for fixed header -->
 
     <!-- HERO BANNER -->
     <!-- TODO: make this fill 100% of vertical screen space -->
@@ -64,7 +61,7 @@
         </div>
         <div class="hero-scroll d-flex flex-column align-items-center">
             <span>Scroll down to discover more...</span>
-            <a data-scroll href="#scroll-link"><i class="mdi mdi-chevron-down" alt="Scroll down arrow"></i></a>
+            <a data-scroll href="#scroll-link"><i class="mdi mdi-chevron-down" alt="scroll down arrow" aria-label="scroll to first heading"></i></a>
         </div>
       </div>
     </div>
@@ -73,7 +70,7 @@
 
     <div class="main-body">
       <!-- EVENTS -->
-      <h1>Events</h1>
+      <h1 aria-label="events">Events</h1>
       <div class="container">
         <h2>Event 1</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -92,8 +89,8 @@
           <div class="card">
             <img class="card-img-top img-fluid" src="./resources/images/placeholder.png" alt="Card image cap">
             <div class="card-body">
-              <h4 class="card-title">Person 1</h4>
-              <h6 class="card-title text-muted font-italic">Born to play bass!</h6>
+              <h2 class="card-title">Person 1</h2>
+              <small class="text-muted font-italic">Born to play bass!</small>
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               <p class="card-text"><small class="text-muted">Ut enim ad minim veniam.</small></p>
               <a href="#" class="btn btn-block btn-outline-primary">Read more</a>
@@ -102,8 +99,8 @@
           <div class="card border-primary">
             <img class="card-img-top img-fluid" src="./resources/images/placeholder.png" alt="Card image cap">
             <div class="card-body">
-              <h4 class="card-title">Person 2</h4>
-              <h6 class="card-title text-muted font-italic">Trumpeter extraordinaire!</h6>
+              <h2 class="card-title">Person 2</h2>
+              <small class="text-muted font-italic">Trumpeter extraordinaire!</small>
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               <p class="card-text"><small class="text-primary">Section leader!</small></p>
               <a href="#" class="btn btn-block btn-outline-primary">Read more</a>
@@ -112,8 +109,8 @@
           <div class="card border-primary">
             <img class="card-img-top img-fluid" src="./resources/images/placeholder.png" alt="Card image cap">
             <div class="card-body">
-              <h4 class="card-title">Person 3</h4>
-              <h6 class="card-title text-muted font-italic">A whizz on the keyboard!</h6>
+              <h2 class="card-title">Person 3</h2>
+              <small class="text-muted font-italic">A whizz on the keyboard!</small>
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               <p class="card-text"><small class="text-primary">Section leader!</small></p>
               <a href="#" class="btn btn-block btn-outline-primary">Read more</a>
@@ -122,28 +119,28 @@
           <div class="card">
             <img class="card-img-top img-fluid" src="./resources/images/placeholder.png" alt="Card image cap">
             <div class="card-body">
-            <h4 class="card-title">Person 4</h4>
-            <h6 class="card-title text-muted font-italic">Cover your eardrums!</h6>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <p class="card-text"><small class="text-muted">Ut enim ad minim veniam.</small></p>
-            <a href="#" class="btn btn-block btn-outline-primary">Read more</a>
+              <h2 class="card-title">Person 4</h2>
+              <small class="text-muted font-italic">Cover your eardrums!</small>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p class="card-text"><small class="text-muted">Ut enim ad minim veniam.</small></p>
+              <a href="#" class="btn btn-block btn-outline-primary">Read more</a>
             </div>
           </div>
           <div class="card">
             <img class="card-img-top img-fluid" src="./resources/images/placeholder.png" alt="Card image cap">
             <div class="card-body">
-            <h4 class="card-title">Person 5</h4>
-            <h6 class="card-title text-muted font-italic">Hitting those high notes!</h6>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <p class="card-text"><small class="text-muted">Ut enim ad minim veniam.</small></p>
-            <a href="#" class="btn btn-block btn-outline-primary">Read more</a>
+              <h2 class="card-title">Person 5</h2>
+              <small class="text-muted font-italic">Hitting those high notes!</small>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p class="card-text"><small class="text-muted">Ut enim ad minim veniam.</small></p>
+              <a href="#" class="btn btn-block btn-outline-primary">Read more</a>
             </div>
           </div>
           <div class="card border-primary">
             <img class="card-img-top img-fluid" src="./resources/images/placeholder.png" alt="Card image cap">
             <div class="card-body">
-              <h4 class="card-title">Person 6</h4>
-              <h6 class="card-title text-muted font-italic">A fabulous flautist!</h6>
+              <h2 class="card-title">Person 6</h2>
+              <small class="text-muted font-italic">A fabulous flautist!</small>
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               <p class="card-text"><small class="text-primary">Section leader!</small></p>
               <a href="#" class="btn btn-block btn-outline-primary">Read more</a>
@@ -160,7 +157,7 @@
           <div class="card">
             <img class="card-img-top img-fluid" src="./resources/images/tshirt.jpg" alt="Card image cap">
             <div class="card-body">
-              <h4 class="card-title">T-shirts</h4>
+              <h2 class="card-title">T-shirts</h2>
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               <p class="card-text"><small class="text-muted">5 different types!</small></p>
               <a href="#" class="btn btn-block btn-outline-success">Purchase</a>
@@ -169,7 +166,7 @@
           <div class="card">
             <img class="card-img-top img-fluid" src="./resources/images/mug.png" alt="Card image cap">
             <div class="card-body">
-              <h4 class="card-title">Mugs</h4>
+              <h2 class="card-title">Mugs</h2>
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               <p class="card-text"><small class="text-muted">8 different colours!</small></p>
               <a href="#" class="btn btn-block btn-outline-success">Purchase</a>
@@ -178,7 +175,7 @@
           <div class="card">
             <img class="card-img-top img-fluid" src="./resources/images/hat.jpg" alt="Card image cap">
             <div class="card-body">
-              <h4 class="card-title">Hats</h4>
+              <h2 class="card-title">Hats</h2>
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               <p class="card-text"><small class="text-muted">3 different styles!</small></p>
               <a href="#" class="btn btn-block btn-outline-success">Purchase</a>
