@@ -1,3 +1,6 @@
 /node_modules
-/resources/images_full-size
-/resources/images_compressed
+
+# Unfortunately we have to push these files to github so that we can view remotely on iPhone etc.
+
+# /resources/images_full-size
+# /resources/images_compressed
